@@ -1,0 +1,221 @@
+@import "_var";
+
+.news-section {
+
+  ._container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Comfortaa_Medium;
+    padding: 100px 50px;
+    box-sizing: border-box;
+  }
+
+  .slider-section {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    border-top: 2px solid $light_blue;
+    border-bottom: 2px solid $light_blue;
+    padding: 25px 0;
+  }
+
+  .slider-level {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+
+  .slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    max-width: 500px;
+    height: 300px;
+    background: $grey;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 20px;
+
+    .title-section {
+      display: flex;
+      justify-content: space-between;
+      max-width: 460px;
+      width: 100%;
+      margin-bottom: 30px;
+
+      .date {
+        margin-left: 20px;
+      }
+    }
+
+    .content {
+      line-height: 18px;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .read {
+      font-size: 16px;
+      text-decoration: none;
+      width: 120px;
+      height: 30px;
+      margin-top: auto;
+    }
+  }
+}
+
+.quote-section {
+  font-family: Noto_Serif_Italic;
+  font-size: 28px;
+  margin: 50px 0 150px 0;
+}
+
+.all-news {
+  width: 100%;
+
+  .title {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .allnews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .allnews-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 150px;
+    background-color: $grey;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .title {
+      text-align: start;
+    }
+
+    button[class=more] {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 10px;
+      right: 10px;
+      border-radius: 5px;
+
+      .description {
+        position: absolute;
+        display: none;
+        font-size: 14px;
+        width: 150px;
+        height: 50px;
+        background: $grey;
+        left: -117px;
+        top: -70px;
+      }
+
+      &:hover .description {
+        display: block;
+      }
+    }
+
+    .details {
+      display: block;
+      font-family: Comfortaa_Bold;
+      text-align: center;
+      color: #6F98DB;
+      cursor: pointer;
+      margin: auto 0 0 0;
+    }
+
+    .img-section {
+      width: 250px;
+      cursor: default;
+      margin-right: 10px;
+    }
+
+    .image {
+      width: 250px;
+      min-height: 142px;
+      cursor: pointer;
+    }
+
+    .text-section {
+      display: flex;
+      flex-direction: column;
+
+      .text-head {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+
+      .date {
+        margin-right: 20px;
+      }
+
+      .title,
+      .date {
+        font-size: 18px;
+      }
+
+      .text {
+        line-height: 18px;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .original {
+        display: none;
+      }
+    }
+  }
+
+  .load {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+// Slider styles
+
+.slick-dots {
+  display: flex;
+  margin-top: 20px;
+
+  .slick-active {
+    background-color: black;
+  }
+
+  li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  button {
+    display: none !important;
+  }
+}
+
+// End of slider styles

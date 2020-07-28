@@ -1,0 +1,68 @@
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+button {
+  display: flex;
+  font-family: Comfortaa_Medium;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.25;
+  width: 150px;
+  height: 50px;
+  background: none;
+  border-radius: 10px;
+  transition: 0.2s ease-out; }
+  button:hover {
+    cursor: pointer;
+    transition: 0.2s ease-out; }
+
+header {
+  font-family: Comfortaa_Medium;
+  color: white;
+  background: linear-gradient(#6d95da, #96d4e5); }
+
+header {
+  box-sizing: border-box;
+  padding: 50px 50px 100px 50px; }
+  header .nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px; }
+  header .zoom-section .zoom {
+    color: white;
+    border: 2px solid white; }
+    header .zoom-section .zoom:hover {
+      color: #6d96da;
+      background-color: white; }
+  header .menu-section {
+    display: flex; }
+    header .menu-section .menu {
+      line-height: 25px;
+      color: white;
+      outline: none;
+      margin: 0 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.2s; }
+      header .menu-section .menu:after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0;
+        background-color: white;
+        transition: width .3s ease-in-out; }
+      header .menu-section .menu:hover:after, header .menu-section .menu:focus:after {
+        width: 100%; }
+  header .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Noto_Serif_Regular; }
+    header .main-section .official {
+      margin: 10px 0; }
+    header .main-section .name {
+      font-size: 48px;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=header.css.map */

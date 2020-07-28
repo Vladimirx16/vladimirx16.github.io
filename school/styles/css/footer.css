@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: Comfortaa_Medium;
+  background: #6F91BE;
+  padding: 25px 50px; }
+  footer a {
+    font-family: Comfortaa_Regular;
+    color: white;
+    text-decoration: none; }
+  footer .footer-link {
+    color: white;
+    margin: 5px 0; }
+  footer .footer-title {
+    font-family: Comfortaa_Bold;
+    font-size: 20px;
+    margin: 30px 0 5px 0; }
+    footer .footer-title:first-child {
+      margin-top: 0; }
+
+/*# sourceMappingURL=footer.css.map */
